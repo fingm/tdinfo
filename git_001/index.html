@@ -1,7 +1,45 @@
 <!DOCTYPE html>
 <html>
-    <head><h1>Mi pagina</h1> </head>
+    <head><h1>Tabla</h1> </head>
     <body>
-        <h3>Todo en orden</h3>
+  <!--
+      Piques para armar una tabla:
+        1. table - encierra todo
+        2. thead - encabezado de la tabla
+            2.1. th - titulos del encabezado
+        3. tbody - toda la info
+        4. tr - determina la fila
+            4.1 td - determinar info de cada celda
+    
+      La idea es determinar una fila con tr y luego insertar las celdas con td      
+  -->
+        <div>
+         <table border="1"  >
+            <thead bgcolor="orange">
+                <tr> 
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr>
+                    <td>Matias</td>
+                    <td>Cartro</td>
+                    <td>32</td>
+                </tr>
+                <tr>
+                    <td>Angus</td>
+                    <td>Young</td>
+                    <td>65</td>
+                </tr>
+                <tr>
+                    <td>Malcolm</td>
+                    <td>Young</td>
+                    <td>69</td>
+                </tr>
+            </tbody>  
+          </table>
+         </div>  
     </body>
 </html>
