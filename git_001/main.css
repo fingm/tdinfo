@@ -1,0 +1,61 @@
+header {
+    background-color: rgb(186, 236, 188);
+}
+
+#idUlMenu {
+    list-style-type: none;
+    text-align: left;
+    margin: 0%;
+    width: 50%;
+}
+
+#idNavMenuLi {
+    display: inline;
+    text-align: center;
+    margin: 0%;
+}
+
+#idDivContenedor {
+    background-color: rgb(238, 221, 221);
+    float: left;
+}
+
+#idDivSeccion {
+    float: left;
+    width: 600px;
+
+}
+
+aside {
+    margin-left: 200px;
+    float:right;
+    width: 500px;
+    border:  solid black;
+    height: 535px;
+}
+
+section {
+    height: 250px;
+}
+
+footer {
+    margin-top: 30%;
+    background-color: rgb(186, 236, 188);
+}
+
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+
+    border: 1px solid black;
+}
+
+#idDivTabla {
+    margin-top: 10%;
+    margin-left: 31%;
+
+}
+
+#idParrafo1 {
+    float: left;
+}
