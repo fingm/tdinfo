@@ -1,0 +1,19 @@
+
+
+#idTabla {
+    border: solid black;
+    background-color: rgb(255, 255, 255);
+    margin-left: 35%;
+    margin-top: 5%;
+}
+
+.claseCeldas {
+    border: solid black;
+    width: 150px;
+    height: 100px;
+    text-align: center;
+}
+.contenedor {
+    position: relative;
+    display: inline-block;
+}
