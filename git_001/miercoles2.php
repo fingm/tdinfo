@@ -1,3 +1,4 @@
+
 <?php
 
     $varBoolean = false;
@@ -24,7 +25,7 @@
     switch ($varHelados){
         case "frutilla" :
                 $varMeGusta = "No me gusta";
-;            break;
+            break;
         case "limon" :
             $varMeGusta = "Me encanta";
             break;
@@ -36,20 +37,27 @@
             break;            
     }
 
-
+    $condicion = true;
 ?>
 
 <!DOCTYPE html>
 <html>
     <head>
-
+    <link rel="stylesheet" href="">
     </head>
     <body>
         <?php
-         echo $respuesa; 
-         echo $varNombre;    
-         echo $varMeGusta;
+            $i=0;
+            while ($condicion){
+                echo ("<h1> Hola me repito siempre</h1>".$i);
+                $i = $i +1;   
+                if ($i >= 3){
+                    $condicion =  false;
+                } 
+            }
+            for ($i=0 ; $i < 10; $i++){
+                echo "el numero vale: " .$i . "<br/>";
+            }
         ?>
     </body>
-
 </html>
