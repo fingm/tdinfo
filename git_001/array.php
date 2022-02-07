@@ -22,9 +22,6 @@ print_r($asoc);
 
     </head>
     <body>
-       <div>
-
-       </div> 
-
+    
     </body>
 </html>

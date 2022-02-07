@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset=UTF-8/>
+        <title>Que salga el TATETI</title>
+        <style>
+            table {
+                margin-top: 10%;
+                background-color: rgb(180, 204, 167); 
+                margin-left: 45%;        
+                width: 170px;
+                height: 170px;
+                border-collapse: collapse;
+            }
+            .celda {
+                width: 50px;
+                height: 50px;
+                text-align: center;
+            }
+            .celdasMedioVer {
+                width: 50px;
+                height: 50px;
+                text-align: center;
+                border-left: 2px solid black;
+                border-right: 2px solid black;
+            }
+            .celdasMedioHor {
+                border-top: 2px solid black;
+                border-bottom: 2px solid black;
+            }
+            header {
+                background-color: #fedcb4;
+                height: 30px;
+                width: 100%;
+            }
+            footer {
+                background-color: #fedcb4;
+                height: 20px;
+                width:100%;
+                margin-top: 20%;
+            }
+            #botonJugar {
+                margin-top: 2%;
+                margin-left: 51%;
+                height: 38px;
+                width: 62px;
+                background-color: rgb(222, 245, 209); 
+            }
+        </style>
+    </head>
+    <header>
+        <h2><center>TATETI</center></h2>
+    </header>
+    <body>
+        <div>
+            <table>
+                <tr>
+                    <td id="1" class="celda" onclick="caraocruz(this.id)"></td>
+                    <td id="2" class="celdasMedioVer" onclick="caraocruz(this.id)"></td>
+                    <td id="3" class="celda" onclick="caraocruz(this.id)"></td>
+                </tr>
+                <tr class="celdasMedioHor">
+                    <td id="4" class="celda" onclick="caraocruz(this.id)"></td>
+                    <td id="5" class="celdasMedioVer" onclick="caraocruz(this.id)"></td>
+                    <td id="6 "class="celda" onclick="caraocruz(this.id)"></td>
+                </tr>
+                <tr>
+                    <td id="7" class="celda" onclick="caraocruz(this.id)"></td>
+                    <td id="8" class="celdasMedioVer" onclick="caraocruz(this.id)"></td>
+                    <td id="9" class="celda" onclick="caraocruz(this.id)"></td>
+                </tr>
+            </table>
+            <button id="botonJugar"><a href="tate.html">Reiniciar</a></button>
+        </div>
+        <script>
+            {var i =0;}
+            function caraocruz(this_id) {
+                var identificador;
+                identificador = this_id;
+                if (i%2==0){
+                    imprimir = 'X';
+                } else{
+                    imprimir = 'O';
+                }
+                document.getElementById(this_id).innerHTML = imprimir;
+                i++;
+            }
+        </script>
+        <footer>
+            <h6><center>Creado por Matias Cartro</center></h6>
+        </footer>
+    </body>
+</html>
